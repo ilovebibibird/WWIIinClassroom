@@ -90,9 +90,7 @@
         document.getElementsByTagName('head')[0].appendChild(meta);
         container.className = 'unity-mobile';
         canvas.className = 'unity-mobile';
-
-        canvas.style.height = window.innerHeight + 'px';
-        canvas.style.width = window.innerWidth + 'px';
+        canvas.style.height = window.height + 'px';
         if (window.innerHeight > window.innerWidth) {
           warningBanner.style.display = 'block';
           loadingBar.style.display = 'none';
@@ -114,8 +112,7 @@
             }
             location.reload();
 
-            canvas.style.height = window.innerHeight + 'px';
-            canvas.style.width = window.innerWidth + 'px';
+            canvas.style.height = window.height + 'px';
           },
           false,
         );
